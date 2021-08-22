@@ -23,17 +23,18 @@ export default function Formulario() {
     }
 
     return (        
-        <div className="container col-md-6 mt-4">            
+        <div className="container col-md-4 mt-4">            
             <form onSubmit={registrar}>
+            <h1>Formulario de rexistro <span className="badge bg-secondary">;)</span></h1><br />
                 <div className="form-group">
                     <input type="text" className="form-control" required placeholder="Nome" onChange={e => setNome(e.target.value)} />
-                </div>
+                </div><br />
                 <div className="form-group">
                     <input type="text" className="form-control" required placeholder="Apelido" onChange={e => setApelido(e.target.value)} />
-                </div>
+                </div><br />
                 <div className="form-group">
                     <input type="number" className="form-control" required placeholder="Ano de Nacemento" onChange={e => setAnoNacemento(e.target.value)} />
-                </div>
+                </div><br />
                 <button type="submit" className="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Preme este botón para gardar os teus datos">
                     Gardar
                 </button>
