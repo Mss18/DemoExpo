@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 
 
-export default function Formulario() {
+export const Formulario = () => {
 
     const [nome, setNome] = useState('')
     const [apelido, setApelido] = useState('')
